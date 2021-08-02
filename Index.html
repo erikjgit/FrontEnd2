@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Front End Bootstrap assignment.</title>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <link rel="stylesheet" type="text/css" href="Bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="Bootstrap.js"></script>
+</head>
+
+<body style="max-width: 1024px;">
+
+    <!-- Menu bar -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+
+            <img class="navbar-brand" src="logo.jpg" />
+
+            <ul class="nav navbar-nav">
+                <li><a href="#">Page 1</a></li>
+                <li><a href="#">Page 2</a></li>
+                <li><a href="#">Page 3</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Carousel -->
+    <div id="pictures" class="carousel slide" data-ride="carousel">
+
+        <ul class="carousel-indicators">
+            <li data-target="#pictures" data-slide-to="0" class="active"></li>
+            <li data-target="#pictures" data-slide-to="1"></li>
+            <li data-target="#pictures" data-slide-to="2"></li>
+            <li data-target="#pictures" data-slide-to="3"></li>
+        </ul>
+
+        <div class="carousel-inner">
+            <img class="carousel-item active" src="image1.jpg" width="1024" height="480" />
+            <img class="carousel-item" src="image2.jpg" width="1024" height="480" />
+            <img class="carousel-item" src="image3.jpg" width="1024" height="480" />
+            <img class="carousel-item" src="image4.jpg" width="1024" height="480" />
+        </div>
+
+        <a class="carousel-control-prev" href="#pictures" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#pictures" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+
+    <!-- Contact form -->
+    <div>
+        <form>
+            <div class="form-group">
+                <label for="inputName">Name: </label>
+                <input type="text" class="form-control" id="inputName">
+            </div>
+            <div class="form-group">
+                <label for="inputEmail">Email address: </label>
+                <input type="email" class="form-control" id="inputEmail">
+            </div>
+            <div class="form-group">
+                <label for="inputTel">Phone number: </label>
+                <input type="tel" class="form-control" id="inputTel">
+            </div>
+            <div class="form-group">
+                <label for="inputMsg">Do you have a message for me? </label>
+                <textarea class="form-control" id="inputMsg" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-success">Submit</button>
+            <button type="reset" class="btn btn-danger">Reset</button>
+        </form>
+    </div>
+
+    <div class="row">
+        <!-- Sidebar -->
+        <div style="border: 2px solid white;" class="col">
+            <div class="d-flex flex-column">
+                <ul class="nav nav-pills">
+                    <li>
+                        <a style="padding: 5px;" href="">Pill </a>
+                    </li>
+                    <li>
+                        <a style="padding: 5px;" href="">Link</a>
+                    </li>
+                </ul>
+                <article>
+                    <p>This is a city somewhere</p>
+                    <img style="padding: 10px;" src="image5.jpg">
+                    <p>Fat dogs</p>
+                    <img style="padding: 10px;" src="image6.jpg">
+                    <p>Food that would be delicious with less chili</p> 
+                    <img style="padding: 10px;" src="image7.jpg">
+                </article>
+            </div>
+        </div>
+
+
+        <!-- Content -->
+        <div class="col">
+            <h2>Welcome</h2>
+            <p>This website has some links, some images, menus and such.
+                It's made using Bootstrap and I'm writing this to make this area look better.
+            </p>
+            <button data-toggle="collapse" data-target="#collapseBtn">Show collapsible</button>
+            <div id="collapseBtn" class="collapse">
+                <form>
+                    <div class="form-group">
+                        <label for="rangeForm">Increase power</label>
+                        <input type="range" class="form-control-range" id="rangeForm">
+                    </div>
+                </form>
+            </div>
+            <div class="row">
+                <div style="border: 2px solid black;" class="col">
+                    <p>
+                        Text in one column
+                        <br>
+                        <a href="">Link</a>
+                    </p>
+                </div>
+                <div style="border: 2px solid black;" class="col">
+                    <p>
+                        Columns of text
+                        <br>
+                        More text
+                    </p>
+                </div>
+                <div style="border: 2px solid black;" class="col">
+                    <p>
+                        <img style="padding: 10px;" src="image8.jpg">
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="row">
+            <footer style="position:absolute;" style="width:100%;" style="margin-bottom:0px;">
+                &copy; <a href="#">To the top</a>
+            </footer>
+        </div>
+
+</body>
+
+</html>
